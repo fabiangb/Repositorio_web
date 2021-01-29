@@ -1,0 +1,20 @@
+{
+  "name": "Fabián Barros Proyecto CODER HOUSE",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node": "^15.4.0",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7",
+    "sass": "^1.32.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/Style.scss css/Style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC"
+}

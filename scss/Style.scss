@@ -1,0 +1,61 @@
+/* Variables */
+$title-font: normal 24px/1.5 'Open Sans', sans-serif;
+$cool-red: #F44336;
+$box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+/* SCSS*/
+h1.title {
+ 	font: $title-font; /* Uso la variable*/
+ color: $cool-red;
+}
+
+div.container {
+ color: $cool-white;
+ background: #fff;
+ width: 100%;
+ box-shadow: $box-shadow-bottom-only;
+}
+
+.bloque1{
+	background: #8E3A3A;
+}
+
+.bloque1__titulo{
+	
+	color:#4D01FA;
+}
+
+
+.bloque1__titulo--mayuscula{
+	
+	text-transform:uppercase;
+	color: #5800FA;
+}
+
+
+$color-nico: #FFA5FE;
+
+.navbar{
+
+background-color: $color-nico;
+
+div{
+
+	display: block;
+
+	p{
+
+		background-color: red;
+	}
+}
+
+}
+
+
+@for $i from 1 through 4{
+
+	.item-#{$i} {
+
+		width: 2px* $i;
+	}
+
+}
